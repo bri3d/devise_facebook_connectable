@@ -45,16 +45,16 @@ Gem::Specification.new do |s|
 
     if Gem::Version.new(Gem::RubyGemsVersion) >= Gem::Version.new('1.2.0') then
       s.add_runtime_dependency(%q<activesupport>, [">= 2.3.0"])
-      s.add_runtime_dependency(%q<devise>, ["= 1.0.0"])
+      s.add_runtime_dependency(%q<devise>, [">= 1.0.0"])
       s.add_runtime_dependency(%q<facebooker>, [">= 1.0.55"])
     else
       s.add_dependency(%q<activesupport>, [">= 2.3.0"])
-      s.add_dependency(%q<devise>, ["= 1.0.0"])
+      s.add_dependency(%q<devise>, [">= 1.0.0"])
       s.add_dependency(%q<facebooker>, [">= 1.0.55"])
     end
   else
     s.add_dependency(%q<activesupport>, [">= 2.3.0"])
-    s.add_dependency(%q<devise>, ["= 1.0.0"])
+    s.add_dependency(%q<devise>, [">= 1.0.0"])
     s.add_dependency(%q<facebooker>, [">= 1.0.55"])
   end
 end
